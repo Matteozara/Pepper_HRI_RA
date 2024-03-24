@@ -1,0 +1,20 @@
+topic: ~freeSpaces()
+language: enu
+
+concept:(yes) [yes "all right" sure "why not" ok certainly "very well" yep yea definitely amen]
+concept:(no) [no nope "don't want" "no way" never "not at all" "i can do myself" "i can go myself"]
+concept:(a1) [a1 A1]
+concept:(a2) [a2 A2]
+concept:(b1) [b1 B1]
+concept:(b2) [b2 B2]
+concept:(library) [library LIBRARY Library "study room" books book]
+
+
+u:(~yes) Which room do you want me to show you?
+u:(~no) Ok, have a good day! $action = "no"
+u:(~a1) Great, follow me! I will show you the room A1 $action = "a1"
+u:(~a2) Great, follow me! I will show you the room A2 $action = "a2"
+u:(~b1) Great, follow me! I will show you the room B1 $action = "b1"
+u:(~b2) Great, follow me! I will show you the room B2 $action = "b2"
+u:(~library) Great, follow me! I will show you the Library $action = "library"
+

@@ -1,0 +1,62 @@
+topic: ~ExampleDialog()
+language: enu
+
+# Defining needed concepts, keywords or sentences corresponding to a concept.
+concept:(greetings) [hi hello "can you repeat"]
+concept:(ml) [Iocchi "machine learning" ml ML]
+concept:(dl) ["deep learning" dl deep DL Silvestri]
+concept:(vision) [vision perception Amerini Russo]
+concept:(ai) [artificial intelligence Nardi pddl ai]
+concept:(nlp) [Natural Language nlp Navigli]
+concept:(rl) ["reinforcement learning" reinforcement rl RL Capobianco]
+concept:(robotic) [robotic "De luca" robot robotics]
+concept:(neuro) [neuroengineering neuro brain Cincotti Astolfi]
+concept:(nn) [nn "neural networks" Uncini]
+concept:(social) ["social networks" social Aris Leonardi]
+concept: (free) [study free "free room" space "free room"]
+concept: (library) [library book books]
+concept: (none) [Scardapane law "environment engineering" "software engineering" LLMs]
+concept: (end) [no bye by]
+concept: (sarcasm) ["hahaha" funny joke]
+
+
+
+
+
+
+u:(~greetings) Which class do you want to follow?
+u:(~ml) Great, the Machine Learning class with the Prof Iocchi is in room A2 from 10am to 12pm $room = "ml"
+u:(~dl) Great, the Deep Learning class with the Prof Silvestri is in room B2 from 8am to 10pm $room = "dl"
+u:(~vision) Great, the Vision and Perception class with the Profs Amerini and Russo is in room A1 from 2pm to 4pm $room = "vision"
+u:(~ai) Great, the Artificial Intelligence class with the Prof Nardi is in room B1 from 10am to 12pm $room = "ai"
+u:(~nlp) Great, the Natural Language Processing class with the Prof Navigli is in room A2 from 12pm to 2pm $room = "nlp"
+u:(~rl) Great, the Reinforcement Learning class with the Prof Capobianco is in room B1 from 2pm to 4pm $room = "rl"
+u:(~robotic) Great, the Robotics class with the Prof De Luca is in room A1 from 10am to 12pm $room = "robotic"
+u:(~neuro) Great, the Neuroengineering class with the Profs Cincotti and Astolfi is in room B2 from 12pm to 2pm $room = "neuro"
+u:(~nn) Great, the Neural Network class with the Prof Uncini is in room A1 from 8am to 10am $room = "nn"
+u:(~social) Great, the Social Network class with the Profs Aris and Leonardi is in room B1 from 12pm to 2pm $room = "social"
+u:(~free) A great space to study is the library and it's open from 8am to 4pm, but let me check also the free rooms... $room = "free"
+u:(~library) Oh the library it's open from 8am to 4pm $room = "library"
+u:(~none) I think you are not in the right building, here there isn't that class. Check on the site of your degree to have more specific information $room = "none"
+u:(~end) Ok, have a good day, Bye $room = "end"
+
+u:(_*) Can you repeat?
+    u1:(~greetings) Which class do you want to follow?
+    u1:(~ml) Great, the Machine Learning class with the Prof Iocchi is in room A2 from 10am to 12pm $room = "ml"
+    u1:(~dl) Great, the Deep Learning class with the Prof Silvestri is in room B2 from 8am to 10pm $room = "dl"
+    u1:(~vision) Great, the Vision and Perception class with the Profs Amerini and Russo is in room A1 from 2pm to 4pm $room = "vision"
+    u1:(~ai) Great, the Artificial Intelligence class with the Prof Nardi is in room B1 from 10am to 12pm $room = "ai"
+    u1:(~nlp) Great, the Natural Language Processing class with the Prof Navigli is in room A2 from 12pm to 2pm $room = "nlp"
+    u1:(~rl) Great, the Reinforcement Learning class with the Prof Capobianco is in room B1 from 2pm to 4pm $room = "rl"
+    u1:(~robotic) Great, the Robotics class with the Prof De Luca is in room A1 from 10am to 12pm $room = "robotic"
+    u1:(~neuro) Great, the Neuroengineering class with the Profs Cincotti and Astolfi is in room B2 from 12pm to 2pm $room = "neuro"
+    u1:(~nn) Great, the Neural Network class with the Prof Uncini is in room A1 from 8am to 10am $room = "nn"
+    u1:(~social) Great, the Social Network class with the Profs Aris and Leonardi is in room B1 from 12pm to 2pm $room = "social"
+    u1:(~free) A great space to study is the library and it's open from 8am to 4pm, but let me check also the free rooms... $room = "free"
+    u1:(~library) Oh the library it's open from 8am to 4pm $room = "library"
+    u1:(~none) I think you are not in the right building, here there isn't that class. Check on the site of your degree to have more specific information $room = "none"
+    u1:(~end) Ok, have a good day, Bye $room = "end"
+    u1:(_*) I think you are in the wrong place, I can't help you, sorry. Bye, have a good day! $room = "end"
+
+
+

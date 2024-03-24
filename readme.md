@@ -1,5 +1,6 @@
 # Pepper: HRI + RA project
-This repository contains video demos and the implementation of the project for Human-Robot Interaction and Reasoning Agents developed in Choregraphe.
+This repository contains video demos and the implementation of the project for Human-Robot Interaction and Reasoning Agents developed in Choregraphe. 
+The project consists on Pepper managing the entrances in the building and assisting students with their needs.
 <br>
 The code for Pepper is located inside the 'Pepper_dialog1' folder. To run it, you only need to open it with Choregraphe. 
 <br>
